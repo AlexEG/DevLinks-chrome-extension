@@ -1,15 +1,16 @@
 function Link(imgSrc, title, link) {
-  return `<div class="group flex gap-2 justify-between w-full h-5">
+  return `<div class="group flex gap-2 justify-between w-full h-5 ">
   <div class="flex gap-2">
-    <img src="../images/${imgSrc}" alt="icon" width="20px" />
+    <img src="../images/${
+      imgSrc === "" ? "icon.png" : imgSrc
+    }" alt="icon" width="20px" />
     <p>${title}</p>
   </div>
 
-  <button
-    class="group-hover:text-neutral-50 transition-colors delay-75 duration-200"
-  >
-    <a href="${link}" target="_blank" title="Open in New Tap"
-      ><svg
+  <button class="group-hover:text-neutral-50 transition-colors delay-75 duration-200">
+    <a href="${link}" target="_blank" title="Open in New Tap">
+    
+    <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -32,14 +33,20 @@ const Docs = document.querySelector("#main > #docs");
 const YouTube = document.querySelector("#main > #youtube");
 const Other = document.querySelector("#main > #other");
 
-Docs.innerHTML += Link("icon.png", "Tailwind CSS1", "https://tailwindcss.com/");
+Docs.innerHTML += Link(
+  "TailwindCSS-Dark.svg",
+  "Tailwind CSS",
+  "https://tailwindcss.com/"
+);
+Docs.innerHTML += Link(
+  "React-Dark.svg",
+  "React - reference",
+  "https://react.dev/"
+);
+
 YouTube.innerHTML += Link(
   "icon.png",
   "Tailwind CSS2",
   "https://tailwindcss.com/"
 );
-Other.innerHTML += Link(
-  "icon.png",
-  "Tailwind CSS3",
-  "https://tailwindcss.com/"
-);
+Other.innerHTML += Link("heroicons.png", "heroicons", "https://heroicons.com/");
