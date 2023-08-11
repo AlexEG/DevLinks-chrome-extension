@@ -1,0 +1,23 @@
+{
+  "name": "devlinks-chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./popup/index.css -o ./popup/popup.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexEG/DevLinks-chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexEG/DevLinks-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/AlexEG/DevLinks-chrome-extension#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

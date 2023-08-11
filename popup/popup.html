@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body class="bg-neutral-900 w-64 h-48">
+    <nav>
+      <ul
+        class="grid grid-cols-3 bg-neutral-950 w-full justify-around items-center text-center text-neutral-100 font-medium text-base"
+      >
+        <li
+          class="nav-item pt-1 pb-1 cursor-pointer border-b-neutral-400 border-b-2"
+        >
+          Docs
+        </li>
+        <li class="nav-item pt-1 pb-1 cursor-pointer border-b-neutral-400">
+          YouTube
+        </li>
+        <li class="nav-item pt-1 pb-1 cursor-pointer border-b-neutral-400">
+          Other
+        </li>
+      </ul>
+    </nav>
+
+    <main class="text-neutral-400 font-normal select-none">
+      <!-- Docs -->
+      <section class="flex felx-col px-2 pt-4">
+        <div class="group flex gap-2 justify-between w-full h-5">
+          <div class="flex gap-2">
+            <img src="../images/icon.png" alt="" width="20px" />
+            <p>Site Title</p>
+          </div>
+
+          <button
+            class="group-hover:text-neutral-50 transition-colors delay-75 duration-200"
+          >
+            <a href="https://www.youtube.com/" target="_blank" title="something"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                />
+              </svg>
+            </a>
+          </button>
+        </div>
+      </section>
+      <!-- YouTube -->
+      <section></section>
+      <!-- Other -->
+      <section></section>
+    </main>
+    <script src="./popup.js"></script>
+  </body>
+</html>
